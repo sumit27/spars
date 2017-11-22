@@ -1,0 +1,235 @@
+@font-face {
+    font-family: spars-regular;
+    src: url(../resources/fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: spars-bold;
+    src: url(../resources/fonts/Rubik-Bold.ttf);
+}
+@font-face {
+    font-family: spars-medium;
+    src: url(../resources/fonts/Rubik-Medium.ttf);
+}
+html,
+body {
+  height: 100%;
+}
+body {
+	background-color: #1D1F59;
+	background-image: url("../resources/images/background-pattern.png");
+  background-repeat: repeat-x repeat-y;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container{
+	margin: 50px auto 0;
+	background-color: rgba(13, 17, 29, .6);
+	display: grid;
+	border-radius: 8px;
+  max-width: 550px;
+  width:100%;
+}
+.mid_container{
+		background-color: white;
+		width: 100%:
+		display: block;
+		min-height: 300px;
+		border-radius: 8px;
+    padding: 10px 36px;
+}
+.company_name_row{
+	display: inline-block;
+	width: 65%;
+	padding: 30px 0px 0px 0px;
+}
+
+#email_us_button{
+	position: relative;
+	float: right;
+	background-color: #F63030;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  padding: 15px;
+  letter-spacing: 1px;
+  font-family: spars-medium;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 30px;
+	box-shadow: 0px 8px 24px rgba(246, 48, 48, .5);
+	cursor:pointer;
+  transition: all 0.075s ease-in;
+}
+
+#button-arrow-right{
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+  width: 16px;
+}
+
+#email_us_button:hover{
+  top: -2px;
+	background-color: #B21B1B;
+	box-shadow: 0px 8px 32px rgba(246, 48, 48, .5);
+}
+#email_us_button:focus {outline:0;}
+
+
+.header_title{
+	padding: 16px 44px 16px 20px;
+	color: white;
+	font-family: spars-regular;
+	font-size: 16px;
+}
+#company_name_label{
+	color: black;
+	font-family: spars-bold;
+	font-size: 43px;
+}
+#subtitle_paragraph{
+	color: black;
+	font-family: Georgia, serif;
+	opacity: 0.65;
+  line-height: 28px;
+  font-size: 18px;
+	width: 100%;
+	margin-top: 20px;
+}
+#teams_worked_label{
+	font-size: 26px;
+	font-family: spars-medium;
+  margin-top: 1.6em;
+}
+.images_row{
+	  width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+}
+.images_row:last-child{
+    margin-top: -15px;
+}
+.company_link{
+  transition: all 0.075s ease-in;
+  text-decoration: none;
+  color: black;
+  padding: 8px 8px 0 8px;
+  display: inline-block;
+}
+.company_link:hover{
+  background: rgba(0,0,0,0.05);
+  border-radius: 20px 20px 10px 10px;
+}
+.company_logo_div img{
+	height: 90px;
+	width: 90px;
+}
+.company_logo_div{
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.company_logo_div p{
+	text-align: center;
+	font-family: spars-regular;
+	opacity: .8;
+  margin-top: 8px;
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+.email_wrapper {
+	display: inline;
+}
+p.made-by{
+  text-align: center;
+  color: #8F90AC;
+  font-family: spars-regular;
+  font-size: 14px;
+  padding: 4px 20px 8px;
+}
+p.made-by a{
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+p.made-by a:hover{
+  color: rgba(255, 255, 255, 0.9);
+}
+/*mobile, less than 500px*/
+@media only screen and (max-width: 525px) {
+    body {
+      height: auto;
+    }
+    .header_title{
+    	font-size:14px;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+    #company_name_label {
+      font-size: 32px;
+    }
+    .mid_container{
+    	padding: 0px 20px;
+    }
+    .company_name_row{
+    	width: 100%;
+    }
+    #subtitle_paragraph{
+    	width: 100%;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    #email_us_button{
+		float: left;
+		margin-top: 25px;
+	}
+  #teams_worked_label {
+    font-size: 20px;
+    margin-top: 1.4em;
+  }
+	.company_logo_div img{
+  	height: 80px;
+  	width: 80px;
+  }
+  .only_desktop{
+  	/*display:none;*/
+  }
+  .email_wrapper {
+  	display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  @media only screen and (min-width: 350px) {
+   .not_small_mobile{
+      display: none;
+   }
+}
+}
+
+/*small screen mobiles*/
+@media only screen and (max-height: 600px){
+	@media only screen and (max-width:400px){
+		.only_larger_mobiles{
+				display:none;
+		}
+	}
+}
+.twitter_link{
+  cursor:pointer;
+}
