@@ -346,6 +346,10 @@ div.pattern {
   display: none;
 }
 
+.visible--sm {
+  display: inline;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -432,5 +436,8 @@ div.pattern {
   }
   .visible--lg {
     display: inline;
+  }
+  .visible--sm {
+    display: none;
   }
 }
